@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:all": "ng build lib1 --prod && ng build lib2 --prod && ng build docs --prod"
   },
   "private": true,
   "dependencies": {
