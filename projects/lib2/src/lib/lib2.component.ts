@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'lib-lib2',
   template: `
-    <p>
-      lib2 works!
-    </p>
+  <lib-button>Using lib-button in lib2</lib-button>
   `,
   styles: []
 })

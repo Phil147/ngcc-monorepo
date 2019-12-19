@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent implements OnInit {
+  someObject = {
+    a: 1,
+    b: [1,2,3]
+  };
 
   constructor() { }
 

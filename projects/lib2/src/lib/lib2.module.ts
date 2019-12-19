@@ -1,15 +1,13 @@
 import { ButtonModule } from 'lib1/button';
 import { NgModule } from '@angular/core';
 import { Lib2Component } from './lib2.component';
-import { DerivedComponent } from './derived/derived.component';
-
 
 
 @NgModule({
-  declarations: [Lib2Component, DerivedComponent],
+  declarations: [Lib2Component],
   imports: [
     ButtonModule
   ],
-  exports: [Lib2Component, DerivedComponent]
+  exports: [Lib2Component]
 })
 export class Lib2Module { }
