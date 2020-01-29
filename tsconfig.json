@@ -20,9 +20,11 @@
     ],
     "paths": {
       "lib1": [
+        "projects/lib1/src/lib/public_api",
         "dist/lib1"
       ],
       "lib1/*": [
+        "projects/lib1/*/src/public_api",
         "dist/lib1/*"
       ],
       "lib2": [

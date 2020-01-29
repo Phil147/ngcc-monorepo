@@ -1,9 +1,10 @@
-import { ButtonModule } from './button.module';
-import { CheckboxModule } from 'lib1/checkbox';
+import { CheckboxModule } from './checkbox.module';
+import { ButtonModule } from 'lib1/button';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ButtonComponent } from './button.component';
+import { CheckboxComponent } from './checkbox.component';
 import { Component } from '@angular/core';
+
 
 describe('ButtonComponent', () => {
   let component: TestComponent;
@@ -11,8 +12,8 @@ describe('ButtonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [CheckboxModule, ButtonModule],
-      declarations: [ TestComponent ]
+      imports: [ButtonModule, CheckboxModule],
+      declarations: [ CheckboxComponent, TestComponent ]
     })
     .compileComponents();
   }));
@@ -28,7 +29,8 @@ describe('ButtonComponent', () => {
   });
 });
 
+
 @Component({
-  template: '<lib-checkbox>Hi</lib-checkbox><lib-button>Hi</lib-button>'
+  template: '<lib-button>Hi</lib-button><lib-checkbox></lib-checkbox>'
 })
 class TestComponent {}
